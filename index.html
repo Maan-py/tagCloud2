@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset='utf-8'>
+    <title>SVG3DTagCloud - Example 1</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <script src='js/jquery.svg3dtagcloud.min.js'></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <script>
+
+    	$( document ).ready( function() {
+
+            var entries = [ 
+                
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+                { label: 'Luqmaan', url: '#', target: '_top' },
+
+            ];
+
+            var settings = {
+
+                entries: entries,
+                width: 400,
+                height: 400,
+                radius: '65%',
+                radiusMin: 75,
+                bgDraw: true,
+                bgColor: '#fff',
+                opacityOver: 1.00,
+                opacityOut: 0.05,
+                opacitySpeed: 6,
+                fov: 800,
+                speed: 1,
+                fontFamily: 'Oswald, Arial, sans-serif',
+                fontSize: '15',
+                fontColor: 'orange',
+                fontWeight: 'normal',//bold
+                fontStyle: 'normal',//italic 
+                fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+                fontToUpperCase: true,
+                tooltipFontFamily: 'Oswald, Arial, sans-serif',
+                tooltipFontSize: '11',
+                tooltipFontColor: '#fff',
+                tooltipFontWeight: 'normal',//bold
+                tooltipFontStyle: 'normal',//italic 
+                tooltipFontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+                tooltipFontToUpperCase: false,
+                tooltipTextAnchor: 'left',
+                tooltipDiffX: 0,
+                tooltipDiffY: 10
+
+            };
+
+            //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
+            $( '#holder' ).svg3DTagCloud( settings );
+
+		} );
+        
+    </script>
+
+</head>
+
+<body>
+    <h1>Tag Cloud</h1>
+    <div id='holder' style=""></div>
+
+</body>
